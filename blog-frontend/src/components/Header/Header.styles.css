@@ -1,5 +1,5 @@
 .header{
-    @apply w-full;
+    @apply w-full border-b-[0.1rem] border-slate-200 sticky top-0 bg-white;
 }
 
 .header__Container{
@@ -14,14 +14,15 @@
 }
 
 .header__SearchBar{
-    @apply flex items-center justify-between gap-[1rem] px-[1.5rem] py-[0.8rem] border-slate-400 border-[0.1rem] rounded-[2rem] min-w-[25rem];
+    @apply flex items-center justify-between gap-[1rem] px-[1.5rem] py-[0.8rem] border-slate-400 border-[0.1rem] rounded-[2rem] min-w-[25rem] max-lg:max-w-[20rem] max-md:w-[10rem];
 }
 
 .header__SearchBar input{
-    @apply w-full border-none outline-none text-[1.2rem] font-thin;
+    @apply w-full border-none bg-transparent outline-none text-[1.2rem] font-thin;
 }
 
 .header__Container nav{
+    @apply block max-lg:hidden;
 }
 
 .header__Container nav ul{
@@ -30,12 +31,17 @@
 
 .header__Container nav ul li{
     font-family: "Nunito", sans-serif;
-    @apply text-[1.6rem] font-[400] text-slate-600 hover:text-blue-400 cursor-pointer;
+    @apply text-[1.6rem] font-[400]  hover:text-blue-400 cursor-pointer;
 }
 
 .header__Right{
+    @apply block max-lg:hidden;
 }
 
 .header__Right button{
-    @apply px-[3rem] border-none py-[1rem] bg-yellow-300 text-[1.4rem] rounded-[2rem] transition-all duration-200  hover:scale-105;
+    @apply px-[3rem] border-none py-[1rem] bg-yellow-300 text-[1.4rem] rounded-[2rem] transition-all duration-200  hover:scale-105 ;
+}
+
+.header__responsiveIcon{
+    @apply hidden max-lg:block;
 }

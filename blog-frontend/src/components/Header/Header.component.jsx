@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.styles.css";
 import { CiSearch } from "react-icons/ci";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   return (
@@ -20,15 +21,30 @@ const Header = () => {
         {/* Navbar */}
         <nav>
           <ul>
-            <Link to={'/'}>
+            <NavLink
+              to={"/"}
+              style={({ isActive }) => ({
+                color: isActive ? "#FCC200" : "#848482",
+              })}
+            >
               <li>Home</li>
-            </Link>
-            <Link to={'/about'}>
+            </NavLink>
+            <NavLink
+              to={"/about"}
+              style={({ isActive }) => ({
+                color: isActive ? "#FCC200" : "#848482",
+              })}
+            >
               <li>About</li>
-            </Link>
-            <Link to={'/projects'}>
+            </NavLink>
+            <NavLink
+              to={"/projects"}
+              style={({ isActive }) => ({
+                color: isActive ? "#FCC200" : "#848482",
+              })}
+            >
               <li>Projects</li>
-            </Link>
+            </NavLink>
           </ul>
         </nav>
         {/* Sign In Button */}
@@ -36,6 +52,10 @@ const Header = () => {
           <Link to="/sign-in">
             <button>SignIn</button>
           </Link>
+        </div>
+        {/* Responsive Menu Icon */}
+        <div className="header__responsiveIcon">
+          <GiHamburgerMenu />
         </div>
       </div>
     </header>

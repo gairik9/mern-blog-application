@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <main className='home'>Home.router</main>
+    <main className='home min-h-screen'>Home.router</main>
   )
 }
 
