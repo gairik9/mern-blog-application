@@ -1,5 +1,5 @@
 .header{
-    @apply w-full border-b-[0.1rem] border-slate-200 sticky top-0 bg-white;
+    @apply w-full sticky top-0 ;
 }
 
 .header__Container{
@@ -14,7 +14,7 @@
 }
 
 .header__SearchBar{
-    @apply flex items-center justify-between gap-[1rem] px-[1.5rem] py-[0.8rem] border-slate-400 border-[0.1rem] rounded-[2rem] min-w-[25rem] max-lg:max-w-[20rem] max-md:w-[10rem];
+    @apply flex items-center justify-between gap-[1rem] px-[1.5rem] py-[0.8rem] border-yellow-400 border-[0.2rem] rounded-[2rem] min-w-[30rem] max-lg:max-w-[20rem] max-md:w-[10rem];
 }
 
 .header__SearchBar input{
