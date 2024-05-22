@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import "./Header.styles.css";
-import { CiSearch } from "react-icons/ci";
+import { IoSearch } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
@@ -14,8 +14,8 @@ const Header = () => {
         {/* SearchBar */}
         <form className="header__SearchBar">
           <input type="text" placeholder="Search here...." />
-          <CiSearch
-            style={{ color: "#000", fontSize: "1.5rem", fontWeight: "bold" }}
+          <IoSearch
+            style={{ color: "#000", fontSize: "2rem", }}
           />
         </form>
         {/* Navbar */}
