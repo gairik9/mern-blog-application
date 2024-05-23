@@ -1,0 +1,35 @@
+.footer{
+    @apply bg-yellow-400;
+}
+
+.footer__Container{
+    @apply w-[90%] mx-auto py-[4rem] flex items-center justify-between gap-[10rem];
+}
+
+.footer__Left{
+}
+
+.footer__Left > h1{
+    font-family: "Nunito";
+    @apply text-amber-800 text-[3rem] font-[700];
+}
+
+.footer__SocialMedia{
+    @apply mt-[4rem] flex items-center gap-[2rem];
+}
+
+.footer__SocialMedia img{
+    @apply w-[2rem] h-[2rem] cursor-pointer;
+}
+
+.footer__Middle{
+    @apply flex items-center gap-[4rem];
+}
+
+.footer__Middle h4{
+    @apply cursor-pointer text-black text-[1.4rem] hover:text-amber-800 font-[500];
+}
+
+.footer__Middle > div{
+    @apply h-[1rem] w-[0.2rem] bg-amber-800;
+}
