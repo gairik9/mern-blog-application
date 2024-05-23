@@ -1,5 +1,5 @@
 .header{
-    @apply w-full sticky top-0 ;
+    @apply w-full sticky top-0 bg-[#282828];
 }
 
 .header__Container{

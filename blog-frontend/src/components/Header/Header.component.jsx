@@ -15,7 +15,7 @@ const Header = () => {
         <form className="header__SearchBar">
           <input type="text" placeholder="Search here...." />
           <IoSearch
-            style={{ color: "#000", fontSize: "2rem", }}
+            style={{ color: "#facc15", fontSize: "2rem", }}
           />
         </form>
         {/* Navbar */}
