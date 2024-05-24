@@ -5,8 +5,10 @@ import InstagramIcon from "./FooterImages/InstagramIcon.png";
 import FacebookIcon from "./FooterImages/FacebookIcon.png";
 import WhatsappIcon from "./FooterImages/WhatsappIcon.png";
 import TelegramIcon from "./FooterImages/TelegramIcon.png";
+import headerAltImage from './HeaderImages/headerAltImage.jpg';
 
 export {
+  headerAltImage,
   InstagramIcon,
   FacebookIcon,
   WhatsappIcon,

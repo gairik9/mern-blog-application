@@ -1,0 +1,7 @@
+.OAuth__Button{
+    @apply w-full rounded-[0.4rem] bg-yellow-400 text-black text-[1.4rem] font-[500] outline-none flex items-center justify-center gap-x-[1rem];
+}
+
+.OAuth__Button img{
+    @apply w-[1.6rem];
+}

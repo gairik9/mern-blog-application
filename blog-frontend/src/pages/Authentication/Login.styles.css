@@ -76,3 +76,7 @@
 .login__ExistingMember p span{
     @apply text-yellow-400 ml-[1rem];
 }
+
+.login__ErrorMessage{
+    @apply w-full mt-[2rem] text-[1.2rem] text-center text-red-500 font-[200];
+}

@@ -29,6 +29,9 @@ app.use("/api/V1/user", userRoutes);
 // Signup Route :
 app.use("/api/v1/auth", authRoutes);
 
+// Signin Route :
+app.use("/api/v1/auth", authRoutes);
+
 // ------------ MIDDLEWARES ---------------
 
 app.use((err, req, res, next) => {

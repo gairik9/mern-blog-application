@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { GoogleIcon, sideImage } from "../../assets/images";
+import { sideImage } from "../../assets/images";
 import "./Register.styles.css";
 import { Link, useNavigate } from "react-router-dom";
+import { OAuthButton } from "../../components";
 
 const Register = () => {
   const [formData, setFormData] = useState({});
@@ -40,7 +41,6 @@ const Register = () => {
       if (response.ok) {
         navigate("/sign-in");
       }
-      // console.log(data);
     } catch (error) {
       console.log(error);
       setErrorMessage(error.message);
@@ -89,10 +89,11 @@ const Register = () => {
             <button type="submit" disabled={loading}>
               {loading ? "Loading..." : "SignUp"}
             </button>
-            <button type="button">
+            {/* <button type="button">
               <img src={GoogleIcon} alt="google-icon" />
               <span>GOOGLE</span>
-            </button>
+            </button> */}
+            <OAuthButton className="OAuth__Button" />
           </form>
           {errorMessage ? (
             <div className="register__ErrorMessage">{errorMessage}</div>

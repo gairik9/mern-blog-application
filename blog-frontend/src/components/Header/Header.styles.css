@@ -31,7 +31,7 @@
 
 .header__Container nav ul li{
     font-family: "Nunito", sans-serif;
-    @apply text-[1.6rem] font-[400]  hover:text-blue-400 cursor-pointer;
+    @apply text-white text-[1.6rem] font-[400]  hover:text-blue-400 cursor-pointer;
 }
 
 .header__Right{
@@ -44,4 +44,44 @@
 
 .header__responsiveIcon{
     @apply hidden max-lg:block;
+}
+
+/* .user__details{
+    @apply flex items-center gap-[1.5rem];
+}
+
+.user__detail{
+    @apply flex items-center gap-[1rem];
+}
+
+.user__details >span{
+   font-family: "Nunito", sans-serif;
+    @apply text-white text-[1.6rem] font-[400]  hover:text-blue-400 cursor-pointer;;
+} */
+
+.dropdowncontent{
+    @apply rounded-[0.5rem]  bg-[#3d3c3c] px-[2rem] py-[3rem] ;
+}
+
+.dropdowncontent__Main{
+    @apply flex flex-col items-start gap-y-[2rem] w-full;
+}
+
+.dropdowncontent__Main img{
+    @apply w-full h-[12rem] rounded-[0.4rem] object-cover;
+}
+
+.dropdowncontent__Main div{
+    font-family: "Nunito";
+    @apply flex items-center gap-[1rem] text-[1.4rem] text-yellow-400 line-clamp-2 font-[600] uppercase;
+}
+
+.dropdowncontent__Main div span{
+    /* font-family: "Lora"; */
+    @apply text-[1.4rem] text-white font-[400] line-clamp-2 normal-case;
+}
+
+.dropdowncontent__Main button{
+    font-family: "Nunito";
+    @apply px-[3rem] font-[600] w-full border-none py-[0.5rem] bg-yellow-300 text-[1.4rem] rounded-[0.2rem] transition-all duration-200  hover:scale-105;
 }
